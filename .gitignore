@@ -1,0 +1,13 @@
+# The database, uploaded files, and your superuser account live here.
+# Each person creates their own; never commit it.
+pb_data/
+
+# The PocketBase executable is different for every OS; each person downloads their own.
+pocketbase
+pocketbase.exe
+
+# Extra files that come inside the PocketBase download zip
+CHANGELOG.md
+LICENSE.md
+
+.DS_Store

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Spots</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery (same library as Project 3). Loaded as a normal script, so the
+       global $ exists before our module scripts run. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+
+  <!-- Our page script. type="module" is required to use `import`. -->
+  <script type="module" src="js/list.js"></script>
+</head>
+<body>
+  <header>
+    <p class="site-name">Study Spots</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">All spots</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>All study spots</h1>
+    <p id="status">Loading spots…</p>
+    <div id="spot-list"></div>
+  </main>
+
+  <footer>
+    <p>CS 5774 PocketBase starter</p>
+  </footer>
+</body>
+</html>
