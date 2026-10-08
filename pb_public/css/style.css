@@ -73,3 +73,42 @@ main {
   color: #000;
   font-size: 0.85rem;
 }
+
+/* ---- Header login area (filled in by nav.js) ---- */
+
+#auth-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---- Forms (login.html) ---- */
+
+/* Two forms side by side on wide screens, stacked on phones */
+.form-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  font: inherit;
+}
+
+button {
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.form-message {
+  color: #b00020; /* error red */
+}

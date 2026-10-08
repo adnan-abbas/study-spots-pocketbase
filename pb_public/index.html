@@ -12,7 +12,10 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous"></script>
 
-  <!-- Our page script. type="module" is required to use `import`. -->
+  <!-- Our scripts. type="module" is required to use `import`.
+       nav.js draws the logged-in/logged-out part of the header (on every page).
+       list.js loads the spots for this page. -->
+  <script type="module" src="js/nav.js"></script>
   <script type="module" src="js/list.js"></script>
 </head>
 <body>
@@ -21,6 +24,8 @@
     <nav>
       <ul>
         <li><a href="index.html">All spots</a></li>
+        <!-- filled in by nav.js -->
+        <li id="auth-nav"></li>
       </ul>
     </nav>
   </header>
